@@ -1,0 +1,11 @@
+.container_404{
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    padding: 0 1rem;
+    position: relative;
+    user-select: none;
+    flex-direction: column;
+}

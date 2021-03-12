@@ -1,0 +1,125 @@
+.container{
+    background-color: #ffffff;
+    /*background-image: linear-gradient(315deg, #ffffff 30%, #ed8db3 150%);*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    padding: 0 1rem;
+    position: relative;
+    color: black;
+    user-select: none;
+}
+
+/* #ed8db3 rosa */
+/* #d42732 rojo */
+/* #e20613 rojo fuerte */
+/* #39a935 verde */
+
+.hero-cont{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background{
+    width: 52%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    pointer-events: none;
+    float: right;
+    filter: opacity(0.8) drop-shadow(0 0 0 rgba(218, 218, 218, 0.568));
+}
+
+.content{
+    width: 48%;
+    z-index: 1;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.items h1{
+    font-size: clamp(2.7rem, 4vw, 4rem);
+    margin-bottom: 1.5rem;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.items h2{
+    font-size: clamp(2rem, 3vw, 3rem);
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family: 'Redressed', cursive;
+}
+
+.items p{
+    font-size: clamp(1rem, 1.5vw, 1.6rem);
+    margin-top: 2rem;
+    padding-left: 1rem;
+    width: 80%;
+    border-left: 5px solid;
+    border-image: linear-gradient(to bottom, #ed8db3, #c97999) 1 100%;
+}
+
+.ver_tienda{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  padding: 7px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  background-image: -webkit-linear-gradient(45deg, #ed8db3 0%, #d42732 100%);
+  background-image: linear-gradient(45deg, #ed8db3 0%, #d42732 100%);
+  transition: .4s;
+}
+
+.ver_tienda:hover {
+  background-image: -webkit-linear-gradient(45deg, #ed8db3 0%, #e20613 100%);
+  background-image: linear-gradient(45deg, #ed8db3 0%, #e20613 100%);
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .background{
+        width: 100%;
+        object-position: 58%;
+        filter: opacity(0.2) drop-shadow(0 0 0 rgba(218, 218, 218, 0.568));
+    }
+
+    .content {
+        width: 90%;
+        margin: 2rem;
+    }
+
+    .items {
+      width: 100%;
+    }
+
+    .items p {
+      width: 100%;
+    }
+}
+  
