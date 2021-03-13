@@ -17,7 +17,7 @@ function Tienda() {
             <div className='animate__animated animate__fadeIn animate__slower animate__delay-4s container_cartas'>
                 <div className='carta'>
                     <span>$ 799.99</span>
-                    <img src='./images/hero/modelo.jpg' alt='' />
+                    <img src='./images/hero/modelo_1.jpg' alt='' />
                     <div className='container-informacion'>
                         <div className='informacion'>
                             <h1>Producto</h1>
