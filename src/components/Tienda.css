@@ -9,31 +9,42 @@
     position: relative;
     color: black;
     user-select: none;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
 }
 
 .whatsapp {
     width: 50px;
     height: 50px;
     position: fixed;
-    bottom: 2%;
-    right: 2%;
+    bottom: 10%;
+    right: 3%;
     z-index: 999;
-    -webkit-filter: drop-shadow(3px 3px 3px rgba(34, 34, 34, 0.418));
-    filter: drop-shadow(3px 3px 3px rgba(34, 34, 34, 0.418));
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(34,34,34,.418));
+    filter: drop-shadow(5px 5px 5px rgba(34,34,34,.418));
+}
+
+.logo_tienda {
+    width: 40%;
+    height: auto;
+    -webkit-filter: drop-shadow(3px 3px 3px rgba(34,34,34,.418));
+    filter: drop-shadow(3px 3px 3px rgba(34,34,34,.418));
 }
 
 .wrapper {
+    position: fixed;
+    bottom: 0;
     width: 100%;
+    z-index: 999;
     overflow: hidden;
     height: 4rem;
-    background: #39a935b9;
+    background: #39a935;
     box-sizing: content-box;
+    /*
     margin-bottom: 3rem;
     -moz-box-shadow:    3px 3px 5px 6px #ccc;
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;
     box-shadow:         3px 3px 5px 6px #ccc;
+    */
 }
 
 .noticia {
@@ -73,21 +84,22 @@
     }
   }
 
-.cereza {
-    width: 3%;
-    height: 100%;
+.seleccion {
+    width: 50%;
+    margin-bottom: 3rem;
+    display: none;
 }
 
 .titulo {
-    font-size: clamp(2.7rem, 4vw, 4rem);
+    font-size: clamp(1.5rem,4vw,2rem);
     margin-bottom: 1.5rem;
     letter-spacing: 5px;
     font-weight: bolder;
     text-transform: uppercase;
     text-align: center;
     padding: 1rem;
-    color: #eb8db3;
-    text-shadow: 5px 2px #d42732;
+    color: #54b851;
+    text-shadow: 5px 2px #063;
 }
 
 .container_cartas {
@@ -112,7 +124,7 @@
     flex: 1 0 21%;
 }
 
-span {
+.precio {
     background-color: #e20615a2;
     border-radius: 5px;
     padding: 10px;
@@ -180,12 +192,22 @@ span {
 
     .container_tienda {
         padding: 0;
+        margin-top: 4rem;
+    }
+
+    .logo_tienda {
+        width: 80%;
+        height: auto;
     }
 
     .wrapper {
         padding-left: 0;
         width: 100%;
-        margin-bottom: 2rem;
+    }
+
+    .titulo {
+        margin-bottom: 1rem;
+        text-shadow: 3px 2px #063;
     }
 
     img {
@@ -206,13 +228,16 @@ span {
     }
 
     .whatsapp {
-        bottom: 3%;
-        right: 5%;
+        display: none;
     }
     
     .noticia {
         -webkit-animation-duration: 10s;
         animation-duration: 10s;
+    }
+
+    .seleccion {
+        display: none;
     }
 }
 
