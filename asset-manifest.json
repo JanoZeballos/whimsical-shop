@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/whimsical-shop/static/css/main.3eae6106.chunk.css",
-    "main.js": "/whimsical-shop/static/js/main.9c96a658.chunk.js",
-    "main.js.map": "/whimsical-shop/static/js/main.9c96a658.chunk.js.map",
+    "main.css": "/whimsical-shop/static/css/main.b67269f6.chunk.css",
+    "main.js": "/whimsical-shop/static/js/main.e462297a.chunk.js",
+    "main.js.map": "/whimsical-shop/static/js/main.e462297a.chunk.js.map",
     "runtime-main.js": "/whimsical-shop/static/js/runtime-main.9bdb0afd.js",
     "runtime-main.js.map": "/whimsical-shop/static/js/runtime-main.9bdb0afd.js.map",
-    "static/js/2.cac78701.chunk.js": "/whimsical-shop/static/js/2.cac78701.chunk.js",
-    "static/js/2.cac78701.chunk.js.map": "/whimsical-shop/static/js/2.cac78701.chunk.js.map",
+    "static/js/2.d9c64d7c.chunk.js": "/whimsical-shop/static/js/2.d9c64d7c.chunk.js",
+    "static/js/2.d9c64d7c.chunk.js.map": "/whimsical-shop/static/js/2.d9c64d7c.chunk.js.map",
     "index.html": "/whimsical-shop/index.html",
-    "static/css/main.3eae6106.chunk.css.map": "/whimsical-shop/static/css/main.3eae6106.chunk.css.map",
-    "static/js/2.cac78701.chunk.js.LICENSE.txt": "/whimsical-shop/static/js/2.cac78701.chunk.js.LICENSE.txt"
+    "static/css/main.b67269f6.chunk.css.map": "/whimsical-shop/static/css/main.b67269f6.chunk.css.map",
+    "static/js/2.d9c64d7c.chunk.js.LICENSE.txt": "/whimsical-shop/static/js/2.d9c64d7c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9bdb0afd.js",
-    "static/js/2.cac78701.chunk.js",
-    "static/css/main.3eae6106.chunk.css",
-    "static/js/main.9c96a658.chunk.js"
+    "static/js/2.d9c64d7c.chunk.js",
+    "static/css/main.b67269f6.chunk.css",
+    "static/js/main.e462297a.chunk.js"
   ]
 }
