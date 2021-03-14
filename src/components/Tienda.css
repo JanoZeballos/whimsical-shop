@@ -9,7 +9,7 @@
     position: relative;
     color: black;
     user-select: none;
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
 }
 
 .container_video {
@@ -51,6 +51,10 @@ video {
     filter: drop-shadow(5px 5px 5px rgba(34,34,34,.418));
 }
 
+#corazon {
+    color: red;
+}
+
 .logo_tienda {
     position: absolute;
     width: 55%;
@@ -65,7 +69,7 @@ video {
     width: 100%;
     z-index: 999;
     overflow: hidden;
-    height: 4rem;
+    height: 2rem;
     background: #39a935;
     box-sizing: content-box;
     /*
@@ -78,8 +82,8 @@ video {
 
 .noticia {
     display: inline-block;
-    height: 4rem;
-    line-height: 4rem;  
+    height: 2rem;
+    line-height: 2rem;  
     white-space: nowrap;
     padding-right: 100%;
     box-sizing: content-box;
@@ -90,8 +94,8 @@ video {
     animation-timing-function: linear;
     -webkit-animation-name: ticker;
     animation-name: ticker;
-    -webkit-animation-duration: 30s;
-    animation-duration: 30s;
+    -webkit-animation-duration: 50s;
+    animation-duration: 50s;
 }
 
 .noticia h3 {
@@ -295,6 +299,14 @@ video {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+}
+
+.link_redes {
+    text-decoration: none;
+}
+
+.link_redes:hover {
+    background-color: rgba(59, 242, 255, 0.425);
 }
 
 .borde {

@@ -100,24 +100,30 @@ function Tienda() {
                                     <div className="header"><h1 className='titulo_modal'><img className='cereza' src='./images/icons/cherry.png' alt='Cereza' /> Importante! <img className='cereza' src='./images/icons/cherry.png' alt='Cereza' /></h1></div>
                                     <div className="content">
                                     {' '}
-                                    <h2>Por el momento no esta implementado la realizacion de compras por la pagina.</h2>
+                                    <h2>Por el momento no estamos realizando pedidos por la página.</h2>
                                     <br />
                                     <br />
-                                    <h2>Comunicate por medio de las redes sociales para hacer tu pedido!</h2>
+                                    <h2>Contáctate con nosotros a través de las siguientes redes sociales para realizar tu pedido! <i className="fas fa-heart" id='corazon'></i></h2>
                                     <br />
                                     <div className='container_redes'>
+                                        <a className='link_redes' href='https://instagram.com/_whimsicalclothing_?igshid=33j9vaap2y4f'>
                                         <div className='borde'>
                                             <img className='icono' src='./images/icons/instagram.png' alt='Instagram' />
                                             <h3 className='redes_sociales'>Whimsical</h3>
                                         </div>
+                                        </a>
+                                        <a className='link_redes' href='https://www.facebook.com/Whimsical-103596978478363'>
                                         <div className='borde'>
                                             <img className='icono' src='./images/icons/facebook.png' alt='Facebook' />
                                             <h3 className='redes_sociales'>Whimsical</h3>
                                         </div>
+                                        </a>
+                                        <a className='link_redes' href='https://api.whatsapp.com/send?phone=+5401151631296&text=Hola! Me gustaria hacer un pedido!'>
                                         <div className='borde'>
                                             <img className='icono' src='./images/icons/whatsapp.png' alt='Whatsapp' />
-                                            <h3 className='redes_sociales'>(011) 1234-1234</h3>
+                                            <h3 className='redes_sociales'>(011) 5163-1296</h3>
                                         </div>
+                                        </a>
                                     </div>
                                     </div>
                                 </div>
