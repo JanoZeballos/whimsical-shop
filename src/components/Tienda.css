@@ -90,8 +90,8 @@ video {
     animation-timing-function: linear;
     -webkit-animation-name: ticker;
     animation-name: ticker;
-    -webkit-animation-duration: 20s;
-    animation-duration: 20s;
+    -webkit-animation-duration: 30s;
+    animation-duration: 30s;
 }
 
 .noticia h3 {
@@ -364,11 +364,6 @@ button:focus {outline:0;}
 
     .whatsapp {
         display: none;
-    }
-    
-    .noticia {
-        -webkit-animation-duration: 10s;
-        animation-duration: 10s;
     }
 
     .seleccion {

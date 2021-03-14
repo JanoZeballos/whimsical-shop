@@ -61,9 +61,13 @@ function Tienda() {
             {/*<img className='whatsapp' src='./images/icons/whatsapp.png' alt='Whatsapp' />*/}
             <div className='wrapper'>
                 <div className='noticia'>
-                    <h3>Nuevos atuendos de otoño!</h3>
-                    <h3>WHIMSICAL</h3>
-                    <h3>Vestidos | Jeans | Remeras</h3>
+                    <h3>NUEVOS ATUENDOS DE OTOÑO!</h3>
+                    <h3>| WHIMSICAL |</h3>
+                    <h3>NUEVAS PRENDAS PARA ESTE INVIERNO!</h3>
+                    <h3>| WHIMSICAL |</h3>
+                    <h3>SI TU ORDEN SUPERA LOS $5000 TENES UN 20% DE DESCUENTO!</h3>
+                    <h3>| WHIMSICAL |</h3>
+                    <h3>NO TE PIERDAS LAS MEJORES OFERTAS DE OTOÑO!</h3>
                 </div>
             </div>
             <div className='container_video'>
@@ -79,6 +83,52 @@ function Tienda() {
                 <div className='carta'>
                     <span className='precio'>$ 799.99</span>
                     <img src='./images/hero/modelo_1.jpg' alt='' />
+                    <div className='container-informacion'>
+                        <div className='informacion'>
+                            <h1>Producto</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <Popup
+                                trigger={<button className="btn"><i className="fas fa-plus"></i> Añadir</button>}
+                                modal
+                                nested
+                            >
+                                {close => (
+                                <div className="modal">
+                                    <button className="close" onClick={close}>
+                                    &times;
+                                    </button>
+                                    <div className="header"><h1 className='titulo_modal'><img className='cereza' src='./images/icons/cherry.png' alt='Cereza' /> Importante! <img className='cereza' src='./images/icons/cherry.png' alt='Cereza' /></h1></div>
+                                    <div className="content">
+                                    {' '}
+                                    <h2>Por el momento no esta implementado la realizacion de compras por la pagina.</h2>
+                                    <br />
+                                    <br />
+                                    <h2>Comunicate por medio de las redes sociales para hacer tu pedido!</h2>
+                                    <br />
+                                    <div className='container_redes'>
+                                        <div className='borde'>
+                                            <img className='icono' src='./images/icons/instagram.png' alt='Instagram' />
+                                            <h3 className='redes_sociales'>Whimsical</h3>
+                                        </div>
+                                        <div className='borde'>
+                                            <img className='icono' src='./images/icons/facebook.png' alt='Facebook' />
+                                            <h3 className='redes_sociales'>Whimsical</h3>
+                                        </div>
+                                        <div className='borde'>
+                                            <img className='icono' src='./images/icons/whatsapp.png' alt='Whatsapp' />
+                                            <h3 className='redes_sociales'>(011) 1234-1234</h3>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                )}
+                            </Popup>
+                        </div>
+                    </div>
+                </div>
+                <div className='carta'>
+                    <span className='precio'>$ 349.99</span>
+                    <img src='./images/hero/modelo_2.jpg' alt='' />
                     <div className='container-informacion'>
                         <div className='informacion'>
                             <h1>Producto</h1>
@@ -123,24 +173,48 @@ function Tienda() {
                     </div>
                 </div>
                 <div className='carta'>
-                    <span className='precio'>$ 349.99</span>
-                    <img src='./images/hero/modelo_2.jpg' alt='' />
-                    <div className='container-informacion'>
-                        <div className='informacion'>
-                            <h1>Producto</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                            <button className='btn'><i className="fas fa-plus"></i> Añadir</button>
-                        </div>
-                    </div>
-                </div>
-                <div className='carta'>
                     <span className='precio'>$ 299.99</span>
                     <img src='./images/hero/modelo_3.jpg' alt='' />
                     <div className='container-informacion'>
                         <div className='informacion'>
                             <h1>Producto</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                            <button className='btn'><i className="fas fa-plus"></i> Añadir</button>
+                            <Popup
+                                trigger={<button className="btn"><i className="fas fa-plus"></i> Añadir</button>}
+                                modal
+                                nested
+                            >
+                                {close => (
+                                <div className="modal">
+                                    <button className="close" onClick={close}>
+                                    &times;
+                                    </button>
+                                    <div className="header"><h1 className='titulo_modal'><img className='cereza' src='./images/icons/cherry.png' alt='Cereza' /> Importante! <img className='cereza' src='./images/icons/cherry.png' alt='Cereza' /></h1></div>
+                                    <div className="content">
+                                    {' '}
+                                    <h2>Por el momento no esta implementado la realizacion de compras por medio del sitio.</h2>
+                                    <br />
+                                    <br />
+                                    <h2>Comunicate por medio de las redes sociales para hacer tu pedido!</h2>
+                                    <br />
+                                    <div className='container_redes'>
+                                        <div className='borde'>
+                                            <img className='icono' src='./images/icons/instagram.png' alt='Instagram' />
+                                            <h3 className='redes_sociales'>Whimsical</h3>
+                                        </div>
+                                        <div className='borde'>
+                                            <img className='icono' src='./images/icons/facebook.png' alt='Facebook' />
+                                            <h3 className='redes_sociales'>Whimsical</h3>
+                                        </div>
+                                        <div className='borde'>
+                                            <img className='icono' src='./images/icons/whatsapp.png' alt='Whatsapp' />
+                                            <h3 className='redes_sociales'>(011) 1234-1234</h3>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                )}
+                            </Popup>
                         </div>
                     </div>
                 </div>
@@ -151,7 +225,42 @@ function Tienda() {
                         <div className='informacion'>
                             <h1>Producto</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                            <button className='btn'><i className="fas fa-plus"></i> Añadir</button>
+                            <Popup
+                                trigger={<button className="btn"><i className="fas fa-plus"></i> Añadir</button>}
+                                modal
+                                nested
+                            >
+                                {close => (
+                                <div className="modal">
+                                    <button className="close" onClick={close}>
+                                    &times;
+                                    </button>
+                                    <div className="header"><h1 className='titulo_modal'><img className='cereza' src='./images/icons/cherry.png' alt='Cereza' /> Importante! <img className='cereza' src='./images/icons/cherry.png' alt='Cereza' /></h1></div>
+                                    <div className="content">
+                                    {' '}
+                                    <h2>Por el momento no esta implementado la realizacion de compras por medio del sitio.</h2>
+                                    <br />
+                                    <br />
+                                    <h2>Comunicate por medio de las redes sociales para hacer tu pedido!</h2>
+                                    <br />
+                                    <div className='container_redes'>
+                                        <div className='borde'>
+                                            <img className='icono' src='./images/icons/instagram.png' alt='Instagram' />
+                                            <h3 className='redes_sociales'>Whimsical</h3>
+                                        </div>
+                                        <div className='borde'>
+                                            <img className='icono' src='./images/icons/facebook.png' alt='Facebook' />
+                                            <h3 className='redes_sociales'>Whimsical</h3>
+                                        </div>
+                                        <div className='borde'>
+                                            <img className='icono' src='./images/icons/whatsapp.png' alt='Whatsapp' />
+                                            <h3 className='redes_sociales'>(011) 1234-1234</h3>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                )}
+                            </Popup>
                         </div>
                     </div>
                 </div>
@@ -162,7 +271,42 @@ function Tienda() {
                         <div className='informacion'>
                             <h1>Producto</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                            <button className='btn'><i className="fas fa-plus"></i> Añadir</button>
+                            <Popup
+                                trigger={<button className="btn"><i className="fas fa-plus"></i> Añadir</button>}
+                                modal
+                                nested
+                            >
+                                {close => (
+                                <div className="modal">
+                                    <button className="close" onClick={close}>
+                                    &times;
+                                    </button>
+                                    <div className="header"><h1 className='titulo_modal'><img className='cereza' src='./images/icons/cherry.png' alt='Cereza' /> Importante! <img className='cereza' src='./images/icons/cherry.png' alt='Cereza' /></h1></div>
+                                    <div className="content">
+                                    {' '}
+                                    <h2>Por el momento no esta implementado la realizacion de compras por medio del sitio.</h2>
+                                    <br />
+                                    <br />
+                                    <h2>Comunicate por medio de las redes sociales para hacer tu pedido!</h2>
+                                    <br />
+                                    <div className='container_redes'>
+                                        <div className='borde'>
+                                            <img className='icono' src='./images/icons/instagram.png' alt='Instagram' />
+                                            <h3 className='redes_sociales'>Whimsical</h3>
+                                        </div>
+                                        <div className='borde'>
+                                            <img className='icono' src='./images/icons/facebook.png' alt='Facebook' />
+                                            <h3 className='redes_sociales'>Whimsical</h3>
+                                        </div>
+                                        <div className='borde'>
+                                            <img className='icono' src='./images/icons/whatsapp.png' alt='Whatsapp' />
+                                            <h3 className='redes_sociales'>(011) 1234-1234</h3>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                )}
+                            </Popup>
                         </div>
                     </div>
                 </div>
@@ -173,7 +317,42 @@ function Tienda() {
                         <div className='informacion'>
                             <h1>Producto</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                            <button className='btn'><i className="fas fa-plus"></i> Añadir</button>
+                            <Popup
+                                trigger={<button className="btn"><i className="fas fa-plus"></i> Añadir</button>}
+                                modal
+                                nested
+                            >
+                                {close => (
+                                <div className="modal">
+                                    <button className="close" onClick={close}>
+                                    &times;
+                                    </button>
+                                    <div className="header"><h1 className='titulo_modal'><img className='cereza' src='./images/icons/cherry.png' alt='Cereza' /> Importante! <img className='cereza' src='./images/icons/cherry.png' alt='Cereza' /></h1></div>
+                                    <div className="content">
+                                    {' '}
+                                    <h2>Por el momento no esta implementado la realizacion de compras por medio del sitio.</h2>
+                                    <br />
+                                    <br />
+                                    <h2>Comunicate por medio de las redes sociales para hacer tu pedido!</h2>
+                                    <br />
+                                    <div className='container_redes'>
+                                        <div className='borde'>
+                                            <img className='icono' src='./images/icons/instagram.png' alt='Instagram' />
+                                            <h3 className='redes_sociales'>Whimsical</h3>
+                                        </div>
+                                        <div className='borde'>
+                                            <img className='icono' src='./images/icons/facebook.png' alt='Facebook' />
+                                            <h3 className='redes_sociales'>Whimsical</h3>
+                                        </div>
+                                        <div className='borde'>
+                                            <img className='icono' src='./images/icons/whatsapp.png' alt='Whatsapp' />
+                                            <h3 className='redes_sociales'>(011) 1234-1234</h3>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                )}
+                            </Popup>
                         </div>
                     </div>
                 </div>
@@ -184,7 +363,42 @@ function Tienda() {
                         <div className='informacion'>
                             <h1>Producto</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                            <button className='btn'><i className="fas fa-plus"></i> Añadir</button>
+                            <Popup
+                                trigger={<button className="btn"><i className="fas fa-plus"></i> Añadir</button>}
+                                modal
+                                nested
+                            >
+                                {close => (
+                                <div className="modal">
+                                    <button className="close" onClick={close}>
+                                    &times;
+                                    </button>
+                                    <div className="header"><h1 className='titulo_modal'><img className='cereza' src='./images/icons/cherry.png' alt='Cereza' /> Importante! <img className='cereza' src='./images/icons/cherry.png' alt='Cereza' /></h1></div>
+                                    <div className="content">
+                                    {' '}
+                                    <h2>Por el momento no esta implementado la realizacion de compras por medio del sitio.</h2>
+                                    <br />
+                                    <br />
+                                    <h2>Comunicate por medio de las redes sociales para hacer tu pedido!</h2>
+                                    <br />
+                                    <div className='container_redes'>
+                                        <div className='borde'>
+                                            <img className='icono' src='./images/icons/instagram.png' alt='Instagram' />
+                                            <h3 className='redes_sociales'>Whimsical</h3>
+                                        </div>
+                                        <div className='borde'>
+                                            <img className='icono' src='./images/icons/facebook.png' alt='Facebook' />
+                                            <h3 className='redes_sociales'>Whimsical</h3>
+                                        </div>
+                                        <div className='borde'>
+                                            <img className='icono' src='./images/icons/whatsapp.png' alt='Whatsapp' />
+                                            <h3 className='redes_sociales'>(011) 1234-1234</h3>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                )}
+                            </Popup>
                         </div>
                     </div>
                 </div>
@@ -195,7 +409,42 @@ function Tienda() {
                         <div className='informacion'>
                             <h1>Producto</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                            <button className='btn'><i className="fas fa-plus"></i> Añadir</button>
+                            <Popup
+                                trigger={<button className="btn"><i className="fas fa-plus"></i> Añadir</button>}
+                                modal
+                                nested
+                            >
+                                {close => (
+                                <div className="modal">
+                                    <button className="close" onClick={close}>
+                                    &times;
+                                    </button>
+                                    <div className="header"><h1 className='titulo_modal'><img className='cereza' src='./images/icons/cherry.png' alt='Cereza' /> Importante! <img className='cereza' src='./images/icons/cherry.png' alt='Cereza' /></h1></div>
+                                    <div className="content">
+                                    {' '}
+                                    <h2>Por el momento no esta implementado la realizacion de compras por medio del sitio.</h2>
+                                    <br />
+                                    <br />
+                                    <h2>Comunicate por medio de las redes sociales para hacer tu pedido!</h2>
+                                    <br />
+                                    <div className='container_redes'>
+                                        <div className='borde'>
+                                            <img className='icono' src='./images/icons/instagram.png' alt='Instagram' />
+                                            <h3 className='redes_sociales'>Whimsical</h3>
+                                        </div>
+                                        <div className='borde'>
+                                            <img className='icono' src='./images/icons/facebook.png' alt='Facebook' />
+                                            <h3 className='redes_sociales'>Whimsical</h3>
+                                        </div>
+                                        <div className='borde'>
+                                            <img className='icono' src='./images/icons/whatsapp.png' alt='Whatsapp' />
+                                            <h3 className='redes_sociales'>(011) 1234-1234</h3>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                )}
+                            </Popup>
                         </div>
                     </div>
                 </div>
@@ -206,7 +455,42 @@ function Tienda() {
                         <div className='informacion'>
                             <h1>Producto</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                            <button className='btn'><i className="fas fa-plus"></i> Añadir</button>
+                            <Popup
+                                trigger={<button className="btn"><i className="fas fa-plus"></i> Añadir</button>}
+                                modal
+                                nested
+                            >
+                                {close => (
+                                <div className="modal">
+                                    <button className="close" onClick={close}>
+                                    &times;
+                                    </button>
+                                    <div className="header"><h1 className='titulo_modal'><img className='cereza' src='./images/icons/cherry.png' alt='Cereza' /> Importante! <img className='cereza' src='./images/icons/cherry.png' alt='Cereza' /></h1></div>
+                                    <div className="content">
+                                    {' '}
+                                    <h2>Por el momento no esta implementado la realizacion de compras por medio del sitio.</h2>
+                                    <br />
+                                    <br />
+                                    <h2>Comunicate por medio de las redes sociales para hacer tu pedido!</h2>
+                                    <br />
+                                    <div className='container_redes'>
+                                        <div className='borde'>
+                                            <img className='icono' src='./images/icons/instagram.png' alt='Instagram' />
+                                            <h3 className='redes_sociales'>Whimsical</h3>
+                                        </div>
+                                        <div className='borde'>
+                                            <img className='icono' src='./images/icons/facebook.png' alt='Facebook' />
+                                            <h3 className='redes_sociales'>Whimsical</h3>
+                                        </div>
+                                        <div className='borde'>
+                                            <img className='icono' src='./images/icons/whatsapp.png' alt='Whatsapp' />
+                                            <h3 className='redes_sociales'>(011) 1234-1234</h3>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                )}
+                            </Popup>
                         </div>
                     </div>
                 </div>
@@ -217,7 +501,42 @@ function Tienda() {
                         <div className='informacion'>
                             <h1>Producto</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                            <button className='btn'><i className="fas fa-plus"></i> Añadir</button>
+                            <Popup
+                                trigger={<button className="btn"><i className="fas fa-plus"></i> Añadir</button>}
+                                modal
+                                nested
+                            >
+                                {close => (
+                                <div className="modal">
+                                    <button className="close" onClick={close}>
+                                    &times;
+                                    </button>
+                                    <div className="header"><h1 className='titulo_modal'><img className='cereza' src='./images/icons/cherry.png' alt='Cereza' /> Importante! <img className='cereza' src='./images/icons/cherry.png' alt='Cereza' /></h1></div>
+                                    <div className="content">
+                                    {' '}
+                                    <h2>Por el momento no esta implementado la realizacion de compras por medio del sitio.</h2>
+                                    <br />
+                                    <br />
+                                    <h2>Comunicate por medio de las redes sociales para hacer tu pedido!</h2>
+                                    <br />
+                                    <div className='container_redes'>
+                                        <div className='borde'>
+                                            <img className='icono' src='./images/icons/instagram.png' alt='Instagram' />
+                                            <h3 className='redes_sociales'>Whimsical</h3>
+                                        </div>
+                                        <div className='borde'>
+                                            <img className='icono' src='./images/icons/facebook.png' alt='Facebook' />
+                                            <h3 className='redes_sociales'>Whimsical</h3>
+                                        </div>
+                                        <div className='borde'>
+                                            <img className='icono' src='./images/icons/whatsapp.png' alt='Whatsapp' />
+                                            <h3 className='redes_sociales'>(011) 1234-1234</h3>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                )}
+                            </Popup>
                         </div>
                     </div>
                 </div>
