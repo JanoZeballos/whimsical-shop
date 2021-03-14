@@ -1,6 +1,8 @@
 import React from 'react'
 import './Tienda.css'
 import Select from 'react-select'
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 //import { Link } from 'react-router-dom';
 
 function Tienda() {
@@ -56,7 +58,7 @@ function Tienda() {
 
     return (
         <div className='container_tienda'>
-            <img className='whatsapp' src='./images/icons/whatsapp.png' alt='Whatsapp' />
+            {/*<img className='whatsapp' src='./images/icons/whatsapp.png' alt='Whatsapp' />*/}
             <div className='wrapper'>
                 <div className='noticia'>
                     <h3>Nuevos atuendos de otoño!</h3>
@@ -64,7 +66,13 @@ function Tienda() {
                     <h3>Vestidos | Jeans | Remeras</h3>
                 </div>
             </div>
-            <img className='logo_tienda' src='./images/icons/logo.png' alt='Logo' />
+            <div className='container_video'>
+                <video id='vid' loop autoPlay muted>
+                    <source className='video' src="./videos/video_3.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+                <img className='logo_tienda' src='./images/icons/logo_whimsical.png' alt='Logo' />
+            </div>
             <h1 className='titulo'>Tienda | Shop {/*<img className='animate__animated animate__fadeIn animate__slower animate__delay-2s cereza' src='./images/icons/cherry.png' alt='Cereza' />*/}</h1>
             <Select className='seleccion' options={groupedOptions} formatGroupLabel={formatGroupLabel}/>
             <div className='animate__animated animate__fadeIn animate__slower animate__delay-1s container_cartas'>
@@ -75,7 +83,42 @@ function Tienda() {
                         <div className='informacion'>
                             <h1>Producto</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                            <button className='btn'><i className="fas fa-plus"></i> Añadir</button>
+                            <Popup
+                                trigger={<button className="btn"><i className="fas fa-plus"></i> Añadir</button>}
+                                modal
+                                nested
+                            >
+                                {close => (
+                                <div className="modal">
+                                    <button className="close" onClick={close}>
+                                    &times;
+                                    </button>
+                                    <div className="header"><h1 className='titulo_modal'><img className='cereza' src='./images/icons/cherry.png' alt='Cereza' /> Importante! <img className='cereza' src='./images/icons/cherry.png' alt='Cereza' /></h1></div>
+                                    <div className="content">
+                                    {' '}
+                                    <h2>Por el momento no esta implementado la realizacion de compras por medio del sitio.</h2>
+                                    <br />
+                                    <br />
+                                    <h2>Comunicate por medio de las redes sociales para hacer tu pedido!</h2>
+                                    <br />
+                                    <div className='container_redes'>
+                                        <div className='borde'>
+                                            <img className='icono' src='./images/icons/instagram.png' alt='Instagram' />
+                                            <h3 className='redes_sociales'>Whimsical</h3>
+                                        </div>
+                                        <div className='borde'>
+                                            <img className='icono' src='./images/icons/facebook.png' alt='Facebook' />
+                                            <h3 className='redes_sociales'>Whimsical</h3>
+                                        </div>
+                                        <div className='borde'>
+                                            <img className='icono' src='./images/icons/whatsapp.png' alt='Whatsapp' />
+                                            <h3 className='redes_sociales'>(011) 1234-1234</h3>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                )}
+                            </Popup>
                         </div>
                     </div>
                 </div>
