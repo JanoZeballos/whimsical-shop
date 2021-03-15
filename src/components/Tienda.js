@@ -3,6 +3,7 @@ import './Tienda.css'
 import Select from 'react-select'
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
+import Carrito from './Carrito';
 //import { Link } from 'react-router-dom';
 
 function Tienda() {
@@ -58,6 +59,7 @@ function Tienda() {
 
     return (
         <div className='container_tienda'>
+            <Carrito />
             {/*<img className='whatsapp' src='./images/icons/whatsapp.png' alt='Whatsapp' />*/}
             <div className='carrito'>
                 <img id='carrito' src='./images/icons/carrito.png' alt='Carrito' />

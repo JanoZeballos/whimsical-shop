@@ -1,17 +1,98 @@
-.navbar {
+.shop_left {
     /*background: linear-gradient(90deg, rgb(196, 117, 122) 0%, #ed8db3 100%);*/
-    background-color: #f6f0c4;
-    background-image: linear-gradient(315deg, #d42732 0%, #ed8d8d 74%);
-    height: 80px;
+    background-color: #ffffff;
+    height: 100vh;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     font-size: 1.2rem;
-    position: absolute;
-    width: 100%;
+    position: fixed;
     top: 0;
+    left: 0;
     z-index: 999;
 }
+
+.shop_right {
+    /*background: linear-gradient(90deg, rgb(196, 117, 122) 0%, #ed8db3 100%);*/
+    background-color: #2e2e2e;
+    height: 100vh;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+}
+
+table {
+    width: 90%;
+    height: auto;
+    /*
+    border-collapse: collapse;
+    border-radius: 30px;
+    overflow: hidden;
+    border-style: hidden; /* hide standard table (collapsed) border */
+    /*box-shadow: 0 0 0 1px #666; /* this draws the table border  */
+}
+
+table, th, td {
+    /*border: 1px solid rgb(182, 182, 182);
+    border-collapse: collapse;*/
+    padding: 1rem;
+    text-align: center;
+}
+
+.total {
+    padding-top: 2rem;
+}
+
+.link_volver {
+    text-decoration: none;
+    color: black;
+}
+
+.volver {
+    border-radius: 25px;
+    padding: 1rem 0 1rem 0;
+    font-size: 16px;
+}
+
+.flecha {
+    width: 30px;
+    height: 20px;
+    padding-top: 10px;
+    margin-right: 10px;
+}
+
+.header th {
+    margin-bottom: 2rem;
+    background-color: #ca686e;
+    color: #fff;
+}
+
+.productos {
+    background-color: #75757525;
+}
+
+.producto_img {
+    width: 50px;
+    height: 70px;
+}
+
+
+
+
+
+
+
+
+
   
 .navbar-container {
     display: flex;
