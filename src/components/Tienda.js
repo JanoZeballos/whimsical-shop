@@ -59,6 +59,14 @@ function Tienda() {
     return (
         <div className='container_tienda'>
             {/*<img className='whatsapp' src='./images/icons/whatsapp.png' alt='Whatsapp' />*/}
+            <div className='container_menu'>
+                <div className='carrito'>
+                    <i id='carrito' className="fas fa-shopping-cart"></i>
+                </div>
+                <div className='envio'>
+                    <i id='envio' className="fas fa-shipping-fast"></i>
+                </div>
+            </div>
             <div className='wrapper'>
                 <div className='noticia'>
                     <h3>NUEVOS ATUENDOS DE OTOÑO!</h3>
