@@ -16,7 +16,7 @@
 
 .shop_right {
     /*background: linear-gradient(90deg, rgb(196, 117, 122) 0%, #ed8db3 100%);*/
-    background-color: #2e2e2e;
+    background-color: #242424;
     height: 100vh;
     width: 30%;
     display: flex;
@@ -28,6 +28,7 @@
     top: 0;
     right: 0;
     z-index: 999;
+    box-shadow: -8px 0px 18px 1px #aaaaaa;
 }
 
 table {
@@ -49,7 +50,8 @@ table, th, td {
 }
 
 .total {
-    padding-top: 2rem;
+    padding-top: 1rem;
+    font-size: 16px;
 }
 
 .link_volver {
@@ -72,12 +74,12 @@ table, th, td {
 
 .header th {
     margin-bottom: 2rem;
-    background-color: #ca686e;
+    background-color: rgb(231, 113, 113);
     color: #fff;
 }
 
 .productos {
-    background-color: #75757525;
+    /*background-color: #75757525;*/
 }
 
 .producto_img {
