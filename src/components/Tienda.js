@@ -59,13 +59,11 @@ function Tienda() {
     return (
         <div className='container_tienda'>
             {/*<img className='whatsapp' src='./images/icons/whatsapp.png' alt='Whatsapp' />*/}
-            <div className='container_menu'>
-                <div className='carrito'>
-                    <i id='carrito' className="fas fa-shopping-cart"></i>
-                </div>
-                <div className='envio'>
-                    <i id='envio' className="fas fa-shipping-fast"></i>
-                </div>
+            <div className='carrito'>
+                <img id='carrito' src='./images/icons/carrito.png' alt='Carrito' />
+            </div>
+            <div className='envio'>
+                <img id='envio' src='./images/icons/shipping.png' alt='Envio' />
             </div>
             <div className='wrapper'>
                 <div className='noticia'>
@@ -96,7 +94,7 @@ function Tienda() {
                             <h1>Producto</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                             <Popup
-                                trigger={<button className="btn"><i className="fas fa-plus"></i> Añadir</button>}
+                                trigger={<button className="btn"><img id='plus' src='./images/icons/plus.png' alt='Plus' /> Añadir</button>}
                                 modal
                                 nested
                             >
@@ -148,7 +146,7 @@ function Tienda() {
                             <h1>Producto</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                             <Popup
-                                trigger={<button className="btn"><i className="fas fa-plus"></i> Añadir</button>}
+                                trigger={<button className="btn"><img id='plus' src='./images/icons/plus.png' alt='Plus' /> Añadir</button>}
                                 modal
                                 nested
                             >
@@ -194,7 +192,7 @@ function Tienda() {
                             <h1>Producto</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                             <Popup
-                                trigger={<button className="btn"><i className="fas fa-plus"></i> Añadir</button>}
+                                trigger={<button className="btn"><img id='plus' src='./images/icons/plus.png' alt='Plus' /> Añadir</button>}
                                 modal
                                 nested
                             >
@@ -240,7 +238,7 @@ function Tienda() {
                             <h1>Producto</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                             <Popup
-                                trigger={<button className="btn"><i className="fas fa-plus"></i> Añadir</button>}
+                                trigger={<button className="btn"><img id='plus' src='./images/icons/plus.png' alt='Plus' /> Añadir</button>}
                                 modal
                                 nested
                             >
@@ -286,7 +284,7 @@ function Tienda() {
                             <h1>Producto</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                             <Popup
-                                trigger={<button className="btn"><i className="fas fa-plus"></i> Añadir</button>}
+                                trigger={<button className="btn"><img id='plus' src='./images/icons/plus.png' alt='Plus' /> Añadir</button>}
                                 modal
                                 nested
                             >
@@ -332,7 +330,7 @@ function Tienda() {
                             <h1>Producto</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                             <Popup
-                                trigger={<button className="btn"><i className="fas fa-plus"></i> Añadir</button>}
+                                trigger={<button className="btn"><img id='plus' src='./images/icons/plus.png' alt='Plus' /> Añadir</button>}
                                 modal
                                 nested
                             >
@@ -378,7 +376,7 @@ function Tienda() {
                             <h1>Producto</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                             <Popup
-                                trigger={<button className="btn"><i className="fas fa-plus"></i> Añadir</button>}
+                                trigger={<button className="btn"><img id='plus' src='./images/icons/plus.png' alt='Plus' /> Añadir</button>}
                                 modal
                                 nested
                             >
@@ -424,7 +422,7 @@ function Tienda() {
                             <h1>Producto</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                             <Popup
-                                trigger={<button className="btn"><i className="fas fa-plus"></i> Añadir</button>}
+                                trigger={<button className="btn"><img id='plus' src='./images/icons/plus.png' alt='Plus' /> Añadir</button>}
                                 modal
                                 nested
                             >
@@ -470,7 +468,7 @@ function Tienda() {
                             <h1>Producto</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                             <Popup
-                                trigger={<button className="btn"><i className="fas fa-plus"></i> Añadir</button>}
+                                trigger={<button className="btn"><img id='plus' src='./images/icons/plus.png' alt='Plus' /> Añadir</button>}
                                 modal
                                 nested
                             >
@@ -516,7 +514,7 @@ function Tienda() {
                             <h1>Producto</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                             <Popup
-                                trigger={<button className="btn"><i className="fas fa-plus"></i> Añadir</button>}
+                                trigger={<button className="btn"><img id='plus' src='./images/icons/plus.png' alt='Plus' /> Añadir</button>}
                                 modal
                                 nested
                             >
