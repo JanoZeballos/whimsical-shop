@@ -1,3 +1,12 @@
+.container_shop {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
 .shop_left {
     /*background: linear-gradient(90deg, rgb(196, 117, 122) 0%, #ed8db3 100%);*/
     background-color: #ffffff;
@@ -8,10 +17,8 @@
     align-items: center;
     flex-direction: column;
     font-size: 1.2rem;
-    position: fixed;
-    top: 0;
-    left: 0;
     z-index: 999;
+    overflow-x: auto;
 }
 
 .shop_right {
@@ -20,15 +27,23 @@
     height: 100vh;
     width: 30%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     font-size: 1.2rem;
-    position: fixed;
-    top: 0;
-    right: 0;
     z-index: 999;
     box-shadow: -8px 0px 18px 1px #aaaaaa;
+    position: relative;
+}
+
+.seccion_tabla {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion_total {
+    height: 20vh;
 }
 
 table {
@@ -45,24 +60,28 @@ table {
 table, th, td {
     /*border: 1px solid rgb(182, 182, 182);
     border-collapse: collapse;*/
-    padding: 1rem;
+    padding: .5rem;
     text-align: center;
+    font-size: clamp(1rem,3vw,1rem);
 }
 
 .total {
-    padding-top: 1rem;
-    font-size: 16px;
+    padding: 1rem;
+    font-size: clamp(1.5rem,3vw,1.5rem);
+    text-align: center;
 }
 
 .link_volver {
     text-decoration: none;
     color: black;
+    border: none;
+    background-color: transparent;
 }
 
 .volver {
     border-radius: 25px;
-    padding: 1rem 0 1rem 0;
-    font-size: 16px;
+    padding: 1rem;
+    font-size: clamp(1rem,3vw,1rem);
 }
 
 .flecha {
@@ -78,15 +97,90 @@ table, th, td {
     color: #fff;
 }
 
-.productos {
-    /*background-color: #75757525;*/
-}
-
 .producto_img {
     width: 50px;
     height: 70px;
 }
 
+.eliminar {
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #fff;
+    border: 1px solid white;
+    margin: 1rem;
+    font-size: clamp(1.2rem,3vw,1rem);
+}
+
+.metodos_de_pago {
+    color: #fff;
+    padding: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: clamp(1.5rem,4vw,2rem);
+    text-transform: uppercase;
+}
+
+.container_pagos {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.container_pagos h3 {
+    padding: 1rem;
+    color: #fff;
+    font-weight: lighter;
+    font-size: clamp(1.2rem,3vw,1rem);
+}
+
+.linea {
+    height: 1px;
+    background-color: #ffffff;
+    width: 90%;
+    margin-left: 1rem;
+}
+
+.iconos_pagos {
+    width: 30%;
+    margin-left: 1rem;
+}
+
+.banco {
+    width: 10%;
+    margin-left: 1rem;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 1rem;
+    margin-left: 1rem;
+}
+
+.btn_compra {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 2rem;
+    text-transform: uppercase;
+    background-color: rgb(231, 113, 113);
+    color: #fff;
+    border: none;
+    font-size: clamp(1.2rem,3vw,1rem);
+}
+
+.btn_compra:hover {
+    color: #242424;
+    background-color: #ffffff;
+}
 
 
 
@@ -205,6 +299,102 @@ table, th, td {
 }
   
 @media screen and (max-width: 960px) {
+
+    .container_shop {
+        display: flex;
+        flex-direction: column;
+        position: inherit;
+    }
+
+    .shop_left {
+        height: auto;
+        width: 100%;
+    }
+
+    .shop_right {
+        width: 100%;
+        height: auto;
+        padding-bottom: 8rem;
+    }
+
+    .seccion_tabla {
+        height: auto;
+    }
+    
+    .seccion_total {
+        height: auto;
+    }
+
+    .volver {
+        padding: 3rem 1rem;
+    }
+
+    .header {
+        display: none;
+    }
+
+    table, thead, tbody, th, td, tr { 
+		display: block;
+        color: black;
+	}
+
+    thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+
+    tr {
+        margin: 0 0 1rem 0;
+    }
+	
+	td {
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+	}
+	
+	td:before { 
+		position: absolute;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+        border-right: 1px solid #242424;
+	}
+
+    td:nth-of-type(1):before { content: "Producto"; }
+    td:nth-of-type(2):before { content: ""; }
+    td:nth-of-type(3):before { content: "Talla"; }
+    td:nth-of-type(4):before { content: "Color"; }
+    td:nth-of-type(5):before { content: "Cantidad"; }
+    td:nth-of-type(6):before { content: "Precio"; }
+    td:nth-of-type(7):before { content: "Subtotal"; }
+    td:nth-of-type(8):before { content: "¿Eliminar?"; }
+
+    .metodos_de_pago {
+        margin-top: 1rem;
+    }
+
+    .container_pagos {
+        padding: 1rem;
+    }
+    
+    .btn_compra {
+        position: absolute;
+        bottom: 0;
+        padding: 1.5rem;
+    }
+
+
+
+
+
 
     .navbar {
         display: block;

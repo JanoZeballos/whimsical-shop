@@ -29,18 +29,19 @@ function Carrito() {
   /*console.log(button); onClick={closeMobileMenu}*/
 
   return (
-    <>
+    <div className='container_shop'>
     <div className='shop_left'>
+        <div className='seccion_tabla'>
         <table>
             <tr className='header'>
                 <th>Producto</th>
-                <th></th>
+                <th>Imagen</th>
                 <th>Talla</th>
                 <th>Color</th>
                 <th>Cantidad</th>
                 <th>Precio</th>
                 <th>Subtotal</th>
-                <th></th>
+                <th>¿Eliminar?</th>
             </tr>
             <tr className='productos'>
                 <td>Producto 1</td>
@@ -50,7 +51,7 @@ function Carrito() {
                 <td>1</td>
                 <td>$399,99</td>
                 <td>$399,99</td>
-                <td>X</td>
+                <td><button className='eliminar'>X</button></td>
             </tr>
             <tr className='productos'>
                 <td>Producto 2</td>
@@ -60,7 +61,7 @@ function Carrito() {
                 <td>2</td>
                 <td>$299,99</td>
                 <td>$599,99</td>
-                <td>X</td>
+                <td><button className='eliminar'>X</button></td>
             </tr>
             <tr className='productos'>
                 <td>Producto 3</td>
@@ -70,7 +71,7 @@ function Carrito() {
                 <td>1</td>
                 <td>$599,99</td>
                 <td>$599,99</td>
-                <td>X</td>
+                <td><button className='eliminar'>X</button></td>
             </tr>
             <tr className='productos'>
                 <td>Producto 4</td>
@@ -80,7 +81,7 @@ function Carrito() {
                 <td>1</td>
                 <td>$399,99</td>
                 <td>$399,99</td>
-                <td>X</td>
+                <td><button className='eliminar'>X</button></td>
             </tr>
             <tr className='productos'>
                 <td>Producto 5</td>
@@ -90,26 +91,45 @@ function Carrito() {
                 <td>1</td>
                 <td>$599,99</td>
                 <td>$599,99</td>
-                <td>X</td>
-            </tr>
-            <tr>
-                <a className='link_volver' href='/shop'>
-                    <td><h3 className='volver'><img className='flecha' src='./images/icons/arrow.png' alt='Flecha' />VOLVER A LA TIENDA</h3></td>
-                </a>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td className='total'><h3>Total: $5999,99</h3></td>
-                <td></td>
+                <td><button className='eliminar'>X</button></td>
             </tr>
         </table>
+        </div>
+        <div className='seccion_total'>
+          <h3 className='total'>Total: $5999,99</h3>
+          <button className='link_volver'>
+            <h3 className='volver'><img className='flecha' src='./images/icons/arrow.png' alt='Flecha' />VOLVER A LA TIENDA</h3>
+          </button>
+        </div>
     </div>
     <div className='shop_right'>
-        <h1>Lado Derecho</h1>
+        <h1 className='metodos_de_pago' >Metodos de pago</h1>
+        <div className='container_pagos' >
+            <h3 className='subtitulo'>Seleccione un metodo de pago:</h3>
+            <h3>Mercado Pago</h3>
+            <div className='linea'></div>
+            <div className='center'>
+            <label for='mercado_pago'>
+              <input className='check' type='radio' id='mercado_pago' name='pagos' value='mercado_pago' />
+              <img className='iconos_pagos' src='./images/icons/mercado_pago.png' alt='MercadoPago' />
+            </label>
+            </div>
+            <h3>Tarjetas</h3>
+            <div className='linea'></div>
+            <label for='tarjetas'>
+              <input className='check' type='radio' id='tarjetas' name='pagos' value='tarjetas' />
+              <img className='iconos_pagos' src='./images/icons/tarjetas.png' alt='Tarjetas' />
+            </label>
+            <h3>Transferencia Bancaria</h3>
+            <div className='linea'></div>
+            <label for='banco'>
+              <input className='check' type='radio' id='banco' name='pagos' value='banco' />
+              <img className='banco' src='./images/icons/banco.png' alt='Banco' />
+            </label>
+        </div>
+        <button className='btn_compra' >Realizar compra</button>
     </div>
-    </>
+    </div>
   );
 }
 

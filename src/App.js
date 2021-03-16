@@ -7,6 +7,7 @@ import './App.css';
 import ScrollToTop from './components/ScrollToTop';
 import Home from './components/pages/Home';
 import Shop from './components/pages/Shop';
+import ShoppingCart from './components/pages/ShoppingCart';
 import E404 from './components/E404';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/shop' exact component={Shop} />
+        <Route path='/carrito' exact component={ShoppingCart} />
         <Route path='*' exact component={E404} />
       </Switch>
     </Router>
